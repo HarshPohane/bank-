@@ -5,41 +5,46 @@
 </head>
 <body>
 
+<center>
+
 <h1>Open New Bank Account</h1>
 
-<hr>
+<hr width="60%">
 
 <a href="index.html">Home</a> |
 <a href="about.html">About</a> |
 <a href="contact.html">Contact</a> |
-<a href="open-account.html">Open New Account</a>
+<a href="open.html">Open New Account</a>
 
-<hr>
+<hr width="60%">
 
-<p>
-Fill the form below to open a new bank account.
-</p>
+<p>Fill the form below to open a new bank account.</p>
 
 <form>
 
   <p>
     <b>Full Name:</b><br>
-    <input type="text" name="fullname">
+    <input type="text" name="fullname" required>
+  </p>
+
+  <p>
+    <b>Father's Name:</b><br>
+    <input type="text" name="fathername" required>
   </p>
 
   <p>
     <b>Email:</b><br>
-    <input type="email" name="email">
+    <input type="email" name="email" required>
   </p>
 
   <p>
     <b>Mobile Number:</b><br>
-    <input type="text" name="mobile">
+    <input type="tel" name="mobile" required>
   </p>
 
   <p>
     <b>Date of Birth:</b><br>
-    <input type="date" name="dob">
+    <input type="date" name="dob" required>
   </p>
 
   <p>
@@ -58,13 +63,28 @@ Fill the form below to open a new bank account.
   </p>
 
   <p>
+    <b>Aadhar Number:</b><br>
+    <input type="text" name="aadhar" required>
+  </p>
+
+  <p>
+    <b>PAN Number:</b><br>
+    <input type="text" name="pan">
+  </p>
+
+  <p>
     <b>Address:</b><br>
-    <textarea name="address" rows="4" cols="30"></textarea>
+    <textarea name="address" rows="4" cols="30" required></textarea>
   </p>
 
   <p>
     <b>Upload Photo:</b><br>
     <input type="file" name="photo">
+  </p>
+
+  <p>
+    <b>Upload Signature:</b><br>
+    <input type="file" name="signature">
   </p>
 
   <p>
@@ -74,9 +94,11 @@ Fill the form below to open a new bank account.
 
 </form>
 
-<hr>
+<hr width="60%">
 
 <p>© 2026 My Bank</p>
+
+</center>
 
 </body>
 </html>
