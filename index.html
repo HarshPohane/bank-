@@ -1,90 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Super Money Bank - Secure Banking">
+  <meta name="keywords" content="Bank, Money, Account, Loan">
+  <meta name="author" content="Super Money Bank">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Money Bank</title>
+
   <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-
-    ul {
-      list-style-position: inside;
-      padding: 0;
-    }
-
-    a {
-      margin: 0 5px;
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: bold;
-    }
-
-    img {
-      display: block;
-      margin: auto;
-    }
-
-    audio {
-      margin-top: 10px;
-    }
+    body { font-family: Arial; text-align: center; }
+    nav a { margin: 5px; }
+    table { margin: auto; border-collapse: collapse; }
+    th, td { border: 1px solid black; padding: 8px; }
   </style>
 </head>
+
 <body>
 
-<h1>Welcome Super Money Bank</h1>
-<p><b>Your trusted partner in secure banking</b></p>
+<header>
+  <h1>Welcome to <mark>Super Money Bank</mark></h1>
+  <p><strong>Your trusted partner in secure banking</strong></p>
+</header>
 
 <hr>
 
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a> |
-<a href="open-account.html">Open New Account</a>
+<nav>
+  <a href="index.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="contact.html">Contact</a> 
+  <a href="open.html">Open Account</a>
+</nav>
 
 <hr>
 
-<h2>Super Money Bank</h2>
-<img src="https://imgs.search.brave.com/tKJl8Femmx70jTWjkMimijskleCvqZzwlq6-4xniY2g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZkLzIw/LzE1LzZkMjAxNTZh/Nzg0YWQxYTI0MTEw/ZDYzNzljYzc5MTU2/LmpwZw"
-     alt="My Bank Building" width="350">
+<section>
+  <h2>About Our Bank</h2>
 
-<p>
-My Bank offers safe, secure, and digital banking solutions for individuals
-and businesses. Our goal is to make banking easy, fast, and reliable.
-</p>
+  <figure>
+    <img src="https://via.placeholder.com/350" alt="Bank Image">
+    <figcaption>Our Main Branch</figcaption>
+  </figure>
 
-<hr>
-
-<h2>Bank Information</h2>
-<ul>
-  <li><b>Founded:</b> 2010</li>
-  <li><b>Head Office:</b> Nagpur, Maharashtra</li>
-  <li><b>Bank Type:</b> Public Banking Services</li>
-  <li><b>Customer Care:</b> 1800-123-456</li>
-</ul>
+  <p>
+    We provide <em>safe</em>, <u>secure</u>, and <b>fast</b> banking services.
+  </p>
+</section>
 
 <hr>
 
-<h2>Our Services</h2>
-<ul>
-  <li>Savings Account</li>
-  <li>Current Account</li>
-  <li>Fixed Deposit</li>
-  <li>Online & Mobile Banking</li>
-  <li>Loan Services</li>
-</ul>
+<section>
+  <h2>Bank Information</h2>
+
+  <ul>
+    <li>Founded: 2010</li>
+    <li>Head Office: Nagpur</li>
+    <li>Customer Care: <abbr title="Toll Free Number">TFN</abbr></li>
+  </ul>
+
+  <ol>
+    <li>Step 1: Register</li>
+    <li>Step 2: Verify</li>
+    <li>Step 3: Open Account</li>
+  </ol>
+</section>
 
 <hr>
 
-<h2>Welcome Message</h2>
-<audio controls>
-  <source src="audio/yo-tu-welcome-to-the-afterlife-looping-tune-225538 (1).mp3">
-  Your browser does not support the audio element.
-</audio>
+<section>
+  <h2>Services Table</h2>
+
+  <table>
+    <caption>Available Services</caption>
+    <tr>
+      <th>Service</th>
+      <th>Type</th>
+    </tr>
+    <tr>
+      <td>Savings Account</td>
+      <td>Personal</td>
+    </tr>
+    <tr>
+      <td>Loan</td>
+      <td>Business</td>
+    </tr>
+  </table>
+</section>
 
 <hr>
 
-<p>© 2026 My Bank | All Rights Reserved</p>
+<section>
+  <h2>Multimedia</h2>
+
+  <video width="300" controls>
+    <source src="video/sample.mp4">
+    Video not supported
+  </video>
+
+  <br><br>
+
+  <audio controls>
+    <source src="audio/sample.mp3">
+    Audio not supported
+  </audio>
+</section>
+
+<hr>
+
+<section>
+  <h2>Open Account Form</h2>
+
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label>Name:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" required><br><br>
+
+      <label>Password:</label><br>
+      <input type="password"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="g"> Male
+      <input type="radio" name="g"> Female<br><br>
+
+      <label>Hobbies:</label><br>
+      <input type="checkbox"> Reading
+      <input type="checkbox"> Music<br><br>
+
+      <label>Account Type:</label><br>
+      <select>
+        <option>Savings</option>
+        <option>Current</option>
+      </select><br><br>
+
+      <label>Upload File:</label><br>
+      <input type="file"><br><br>
+
+      <label>Message:</label><br>
+      <textarea></textarea><br><br>
+
+      <input type="submit">
+      <input type="reset">
+    </fieldset>
+  </form>
+</section>
+
+<hr>
+
+<footer>
+  <p>&copy; 2026 Super Money Bank</p>
+</footer>
 
 </body>
 </html>
